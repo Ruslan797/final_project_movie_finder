@@ -1,6 +1,4 @@
-dnspython==2.7.0
-prettytable==3.16.0
-pymongo==4.13.2
-PyMySQL==1.1.1
-wcwidth==0.2.13
+pymysql
+pymongo
 python-dotenv
+tabulate

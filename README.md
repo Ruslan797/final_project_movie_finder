@@ -26,15 +26,7 @@ Final Project: Film Catalog Search
    pip install -r requirements.txt
 
 2. Создайте файл .env в корне проекта:
-   MONGO_URI=mongodb://localhost:27017
-   MONGO_DB=ich
-   MONGO_COLLECTION=final_project_210225_buievskyi
-
-   MYSQL_HOST=localhost
-   MYSQL_PORT=3306
-   MYSQL_USER=root
-   MYSQL_PASSWORD=your_mysql_password
-   MYSQL_DB=film_catalog
+   
 
 3. Запустите проект:
    python main.py
@@ -53,7 +45,7 @@ Final Project: Film Catalog Search
 - 
 Руслан Буевский  
 Группа: 210225  
-Проект: final_project_210225_buievskyi
+Проект: final_project_210225_ruslan_buievskyi
 
 Лицензия:
 Проект создан в рамках учебного курса. Использование — свободное.

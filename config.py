@@ -1,15 +1,17 @@
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 
-load_dotenv()
+# Получение базовой директории и загрузка переменных окружения из .env
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DOTENV_PATH = os.path.join(BASE_DIR, '..', '.env')
+load_dotenv(DOTENV_PATH)
 
-MYSQL_HOST = os.getenv("DB_HOST")
-MYSQL_PORT = int(os.getenv("DB_PORT", "3306"))
-MYSQL_DATABASE = os.getenv("DB_NAME")
-MYSQL_USER = os.getenv("DB_USER")
-MYSQL_PASSWORD = os.getenv("DB_PASSWORD")
+# Константы для подключения к MySQL и MongoDB
+MYSQL_HOST = os.getenv('MYSQL_HOST')
+MYSQL_USER = os.getenv('MYSQL_USER')
+MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD')
+MYSQL_DATABASE = os.getenv('MYSQL_DATABASE')
 
-# MongoDB
-MONGO_URI = os.getenv("MONGO_URI")
-MONGO_DB = os.getenv("MONGO_DB")
-MONGO_COLLECTION = os.getenv("MONGO_COLLECTION")
+MONGO_URI = os.getenv('MONGO_URI')
+MONGO_DB_NAME = os.getenv('MONGO_DB_NAME')
+MONGO_COLLECTION = os.getenv('MONGO_COLLECTION', 'final_project_group_fullname')
